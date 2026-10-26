@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Digital Natives — ccc / co_former</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="vendor/p5.min.js"></script>
+    <script type="module" src="src/app.js"></script>
+  </head>
+  <body>
+    <header>
+      <div>
+        <a class="wordmark" href="./">Digital Natives</a
+        ><span class="byline">Matthew Plummer-Fernandez · 2012–present</span>
+      </div>
+      <nav aria-label="Tool">
+        <a href="?tool=coformer" id="coformer-tab"
+          >co_former <span>1 · form</span></a
+        >
+        <a href="?tool=ccc" id="ccc-tab">ccc <span>2 · colour</span></a>
+      </nav>
+    </header>
+    <main>
+      <section id="viewport" aria-label="Interactive 3D mesh">
+        <div id="canvas-container"></div>
+        <div id="canvas-caption">
+          <strong id="model-name">Loading…</strong><span id="stats"></span>
+        </div>
+        <div id="view-controls">
+          <button id="fit">Fit view</button
+          ><label><input id="edges" type="checkbox" /> Edges</label
+          ><label><input id="lights" type="checkbox" checked /> Lighting</label>
+          <label id="guides-control" hidden
+            ><input id="guides" type="checkbox" checked /> Guides</label
+          >
+        </div>
+        <div id="guide-legend" hidden aria-label="Guide colours">
+          <span class="guide-top">Z1 · crop top</span>
+          <span class="guide-base">Z2 · crop base</span>
+          <span class="guide-axis">Twist axis · S1 tilt / S2 offset</span>
+        </div>
+        <p id="gesture">Drag to orbit · Scroll to zoom · Shift + drag to pan</p>
+      </section>
+      <aside>
+        <p id="status" role="status" aria-live="polite">Starting…</p>
+        <div class="section-title">
+          <h1 id="tool-title">ccc</h1>
+          <span>Browser restoration / 01</span>
+        </div>
+        <p id="intro"></p>
+        <section>
+          <h2>Model</h2>
+          <div class="row">
+            <select id="sample" aria-label="Sample model">
+              <option value="vase.stl">Original vase</option>
+              <option value="box.stl">Original box</option></select
+            ><button id="load-sample">Load sample</button>
+          </div>
+          <div class="row">
+            <button id="open">Open model</button
+            ><button id="append">Append model</button>
+          </div>
+          <p class="small">
+            Open STL, OBJ, GLB or glTF. For glTF, select its .bin files too.
+            Textures are omitted; colours become face colours.
+          </p>
+          <input
+            id="file"
+            type="file"
+            accept=".stl,.obj,.glb,.gltf,.bin"
+            multiple
+            hidden
+          />
+          <div class="row">
+            <button id="undo" disabled>Undo</button
+            ><button id="redo" disabled>Redo</button
+            ><button id="reset">Reset model</button>
+          </div>
+        </section>
+        <section id="colour-panel">
+          <h2>Colour algorithm</h2>
+          <select id="algorithm" aria-label="Colour algorithm"></select>
+          <div id="colour-sliders"></div>
+          <p id="colour-help" class="parameter-help"></p>
+          <div class="row">
+            <button id="reroll">New variation</button
+            ><button id="original-colors">Imported colours</button>
+          </div>
+          <div id="colour-actions" class="button-grid"></div>
+        </section>
+        <section id="form-panel" hidden>
+          <h2>Transformation</h2>
+          <select id="operation" aria-label="Transformation"></select>
+          <div id="form-sliders"></div>
+          <p id="form-help" class="parameter-help"></p>
+          <button id="apply" class="primary">Apply transformation ↵</button
+          ><label class="reverse"
+            ><input id="reverse" type="checkbox" /> Reverse direction</label
+          >
+          <h2>Selection & cutting</h2>
+          <div id="selection-actions" class="button-grid"></div>
+          <p id="selection-info">All vertices selected</p>
+          <h2>Tools</h2>
+          <div id="form-actions" class="button-grid"></div>
+          <details>
+            <summary>Move, rotate & scale</summary>
+            <div id="position-actions" class="button-grid"></div>
+          </details>
+        </section>
+        <button id="continue-colouring" class="primary" hidden>
+          Continue to colouring →
+        </button>
+        <section>
+          <h2>Save</h2>
+          <label class="small" for="gltf-units"
+            >Model units for GLB / glTF</label
+          >
+          <select id="gltf-units">
+            <option value="mm">Millimetres</option>
+            <option value="cm">Centimetres</option>
+            <option value="m">Metres</option>
+          </select>
+          <div class="button-grid">
+            <button id="glb">GLB · colour model</button
+            ><button id="gltf">glTF · colour model</button
+            ><button id="stl">Colour STL · legacy</button
+            ><button id="vrml">Colour VRML</button
+            ><button id="obj">OBJ geometry</button
+            ><button id="png">Screenshot</button
+            ><button id="project">Save session</button
+            ><button id="restore">Open session / notes</button
+            ><button id="parameters">Save colour notes</button>
+          </div>
+          <input id="session-file" type="file" accept=".json,.txt" hidden />
+          <p class="small">
+            GLB is a single file for 3D viewers; glTF also embeds its data in
+            one file. Both preserve face colours. Model units set their physical
+            scale. Legacy colour STL retains the original Materialise
+            convention. Files stay on your computer.
+          </p>
+        </section>
+        <footer>
+          <a href="docs/PORTING.md">Porting notes</a> ·
+          <a href="docs/LICENSING.md">Credits & licensing</a>
+        </footer>
+      </aside>
+    </main>
+  </body>
+</html>

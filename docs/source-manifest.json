@@ -1,0 +1,112 @@
+[
+  {
+    "source": "Dropbox/P22/ccc/HEC_FromObjFile.pde",
+    "copy": "archive/processing/ccc/HEC_FromObjFile.pde",
+    "sha256": "ef55541fe70ca3d380c71459df1b5881e3c13680ca34eadb5784bd235b2745ca"
+  },
+  {
+    "source": "Dropbox/P22/ccc/HE_MeshColor.pde",
+    "copy": "archive/processing/ccc/HE_MeshColor.pde",
+    "sha256": "b36eb7ff93d90cc8127c3a8d1910c5eb4243ef0868a23cd27997d23c434ce522"
+  },
+  {
+    "source": "Dropbox/P22/ccc/build_mesh.pde",
+    "copy": "archive/processing/ccc/build_mesh.pde",
+    "sha256": "17314c9fbd623ccb0cec115521f145cd33c54883360a9997625f6ed04dc0bd04"
+  },
+  {
+    "source": "Dropbox/P22/ccc/algocolor.pde",
+    "copy": "archive/processing/ccc/algocolor.pde",
+    "sha256": "5208ed79cf81949ea7b2abc028842559b473e54b4dbf31683fc1713569617bf6"
+  },
+  {
+    "source": "Dropbox/P22/ccc/GUI2.pde",
+    "copy": "archive/processing/ccc/GUI2.pde",
+    "sha256": "c2a7647d03feff618c24520f31a38d684c4feec50c84d1f4b36450b6933d20e3"
+  },
+  {
+    "source": "Dropbox/P22/ccc/EventHandler.pde",
+    "copy": "archive/processing/ccc/EventHandler.pde",
+    "sha256": "01f37bd043c1489b57e67f8f462d14b689a25d739a3a0fe6749e46fc64876eb5"
+  },
+  {
+    "source": "Dropbox/P22/ccc/nav.pde",
+    "copy": "archive/processing/ccc/nav.pde",
+    "sha256": "842d786a6eb181a7d1b26f8d9dda19c57544615adb870c4b56fa55d1a37d38d8"
+  },
+  {
+    "source": "Dropbox/P22/ccc/ccc.pde",
+    "copy": "archive/processing/ccc/ccc.pde",
+    "sha256": "116291ba469b96c6adbe4e3e7c00cceabb77a9505592450ef4fdb75446c4526d"
+  },
+  {
+    "source": "Dropbox/P22/ccc/Coformer.pde",
+    "copy": "archive/processing/ccc/Coformer.pde",
+    "sha256": "8791772cf04dba1b8aeb21edc28e924eb3c56146831da91cb69ba6b2148e2a66"
+  },
+  {
+    "source": "Dropbox/P22/ccc/notes.pde",
+    "copy": "archive/processing/ccc/notes.pde",
+    "sha256": "2e5b2b3709bb1e9db14dfe6207bf0b12f78d817adc64cbf037cc8fd1a8f2a13c"
+  },
+  {
+    "source": "Dropbox/P22/fff/fff.pde",
+    "copy": "archive/processing/fff/fff.pde",
+    "sha256": "5f7ccac41939d22e73e4d62214448747e212a12977d81d2953525c6096b9999f"
+  },
+  {
+    "source": "Dropbox/P22/fff/HEC_FromObjFile.pde",
+    "copy": "archive/processing/fff/HEC_FromObjFile.pde",
+    "sha256": "ef55541fe70ca3d380c71459df1b5881e3c13680ca34eadb5784bd235b2745ca"
+  },
+  {
+    "source": "Dropbox/P22/fff/HE_MeshColor.pde",
+    "copy": "archive/processing/fff/HE_MeshColor.pde",
+    "sha256": "557f0dcb010932fac2bcf0654ce607a134383b34557fd4a5bf8ba033e307cda2"
+  },
+  {
+    "source": "Dropbox/P22/fff/build_mesh.pde",
+    "copy": "archive/processing/fff/build_mesh.pde",
+    "sha256": "17314c9fbd623ccb0cec115521f145cd33c54883360a9997625f6ed04dc0bd04"
+  },
+  {
+    "source": "Dropbox/P22/fff/algocolor.pde",
+    "copy": "archive/processing/fff/algocolor.pde",
+    "sha256": "db3d233e061b68936f0689e19ac9d6b26e4a35bcb695c370174f78fcfa024360"
+  },
+  {
+    "source": "Dropbox/P22/fff/GUI2.pde",
+    "copy": "archive/processing/fff/GUI2.pde",
+    "sha256": "4791410c7f422a78798fba3667c205595e6220b6bb06c120f2b0617b63903ceb"
+  },
+  {
+    "source": "Dropbox/P22/fff/EventHandler.pde",
+    "copy": "archive/processing/fff/EventHandler.pde",
+    "sha256": "cd17f89418a07a3d1666cb86dc4d747fbbe038979011a35751ad3f2c31db3230"
+  },
+  {
+    "source": "Dropbox/P22/fff/nav.pde",
+    "copy": "archive/processing/fff/nav.pde",
+    "sha256": "57373baf51fcdf3be11185c37067f315aa4fd2fd0faaf2f1d75cc07929f50408"
+  },
+  {
+    "source": "Dropbox/P22/fff/Coformer.pde",
+    "copy": "archive/processing/fff/Coformer.pde",
+    "sha256": "878056873ad475b1760f0f2953b13746e9ee113402f676def5e96d964ba7daf2"
+  },
+  {
+    "source": "Dropbox/P22/fff/notes.pde",
+    "copy": "archive/processing/fff/notes.pde",
+    "sha256": "2e5b2b3709bb1e9db14dfe6207bf0b12f78d817adc64cbf037cc8fd1a8f2a13c"
+  },
+  {
+    "source": "Dropbox/P22/fff/importSTLs/vase.stl",
+    "copy": "assets/vase.stl",
+    "sha256": "52673686070f11dc2bb86620cc14f47bcff337438f82691088a93862d3c0ef2d"
+  },
+  {
+    "source": "Dropbox/P22/fff/importSTLs/box.stl",
+    "copy": "assets/box.stl",
+    "sha256": "a5c0a1c7119fbad0476dfe02700970ad0e613e88dce523f3c7605a6fff5f7039"
+  }
+]

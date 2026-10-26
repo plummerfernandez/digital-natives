@@ -1,0 +1,1 @@
+{"name":"digital-natives","version":"0.1.0","private":true,"type":"module","scripts":{"test":"node --test tests/*.test.js","start":"node server.js"},"description":"Browser restoration of ccc and co_former by Matthew Plummer-Fernandez"}
